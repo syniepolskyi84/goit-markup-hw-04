@@ -182,11 +182,8 @@ a {
   height: 600px;
   padding: 188px 0;
   margin: 0 auto;
-  background-image:linear-gradient(
-    rgba(46, 47, 66, 0.7)
-    rgba(46, 47, 66, 0.7))
-    url(../images/people-office.jpg);
-  background: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-color: #2e2f42;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -247,7 +244,7 @@ a {
   overflow: hidden;
 }
 
-.container-mission{
+.container-mission {
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -255,12 +252,32 @@ a {
   margin: 0 auto;
   
 }
-.feature{
+.feature {
   width: calc((100% - 72px)/4);
   border-radius: 0px 0px 4px 4px;
 
 }
+.feature-item-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: #f4f4fd;
+  
+}
 
+.icons-feature {
+  fill: #F4F4FD;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 100px;
+  top: 24px;
+}
 .feature-type {
   font-weight: 500;
   font-size: 20px;
@@ -337,6 +354,43 @@ a {
 }
 .img-team{
   display: block;
+}
+
+.team-social-border {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+  padding-bottom: 32px;
+
+}
+
+.icons-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  fill: #f4f4fd;
+}
+
+.link-icon:hover .link-icon:active {
+  background-color: #404bbf;
 }
 /* our portfolio*/
 
